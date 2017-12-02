@@ -1,0 +1,337 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    background: #008ace;
+    width: 100%;
+    height: 5em;
+    text-align: center;
+}
+
+header .wrap-p {
+    height: 100%;
+    text-align: center;
+    padding-top: 1em;
+}
+
+p,
+span,
+li {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap-p p {
+    color: white;
+    font-size: 3em;
+}
+
+
+
+header .settings {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    border: 0;
+    background: rgba(0, 0, 0, 0) url("../img/settings.png") no-repeat center;
+}
+
+.profile-section {
+    background: #153d55;
+    width: 100%;
+    padding: 15px 0;
+}
+
+
+.profile-section img {
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    width: 20vw;
+    height: 20vw;
+    min-width: 22em;
+    min-height: 22em;
+}
+
+.profile-section p {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.profile-section {
+    margin: auto;
+    text-align: center;
+    vertical-align: top;
+}
+
+
+.status select {
+
+    height: 100%;
+    font-size: 2em;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-right: -2em;
+    border-radius: 0 5px 5px 0;
+}
+
+.status .point-wrap {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -12px;
+    border-radius: 5px 0 0 5px;
+}
+
+.status .select-wrap .point {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: green;
+    border-radius: 100%;
+    left: 1em;
+    top: 1.4em;
+}
+
+.status .select-wrap {
+    position: relative;
+    width: 9em;
+    height: 4em;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.point-wrap {
+    height: 32px;
+    width: 32px;
+    background: white;
+    display: inline-block;
+}
+
+.wrap-main-section .navbar-form {
+    padding: 0;
+    margin: 1em 1em;
+}
+
+.wrap-main-section .navbar-form .form-control,
+.wrap-main-section .row .navbar-form .input-group-btn .btn-default {
+    max-height: 4em;
+    min-height: 60px;
+}
+
+.wrap-main-section .navbar-form .form-control {
+    border-radius: 10px 0 0 10px;
+}
+
+.wrap-main-section .row .navbar-form .input-group-btn {
+    width: 1%;
+}
+
+
+
+.wrap-main-section .row {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.middle-wrap input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.middle-wrap input[type="radio"]:checked+a:before,
+.middle-wrap input[type="radio"]:checked+a {
+    background-color: #f4f6f9;
+    color: #153d55;
+}
+
+.middle-wrap {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.middle-wrap a {
+    display: block;
+    top: 0;
+    left: 0;
+    color: #008ace;
+    font-size: 3.75vw;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.middle-wrap a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 110%;
+    height: 110%;
+    z-index: -1000;
+}
+
+.converstatins-wrap>a>span {
+    position: absolute;
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    top: 1em;
+    left: 1em;
+    background-color: #f6705a;
+    border-radius: 100%;
+}
+
+.middle-wrap {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.contacts-wrap,
+.converstatins-wrap {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    border: 1px solid #d7dde6;
+}
+
+.contacts-wrap {
+    border-radius: 10px 0 0 10px;
+}
+
+.converstatins-wrap {
+    border-radius: 0 10px 10px 0;
+    margin-left: -5px;
+}
+
+.converstations-list li:last-child span:before {
+    content: "";
+    position: absolute;
+    left: 1em;
+    top: 0.7em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    background: #fb895e url(../img/avatar-group.png) no-repeat center;
+    background-size: 0.6em 0.6em;
+    margin-bottom: 1px;
+}
+
+.converstations-list li:last-child span:after {
+    content: "";
+    position: absolute; 
+    width: 0.5em;
+    height: 0.5em;
+    background: #f6705a;
+    border-radius: 100%;
+    right: 1em;
+    top: 1em;
+}
+
+.contacts-wrap,
+.converstatins-wrap {
+    overflow: hidden;
+}
+
+.contacts-wrap span {
+    color: #c3c4c4;
+}
+
+
+.input-group-btn .btn {
+    padding: 9px 12px;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.form-control:hover {
+    border-right: none;
+}
+
+.list {
+    list-style: none;
+    width: 100%;
+    margin: 3em 0;
+    padding: 0;
+}
+
+.list li {
+    border-bottom: 1px solid #d7dde6;
+    position: relative;
+    font-size: 3.5em;
+    padding: 0.5em 0;
+    width: 100%;
+}
+
+.list li span {
+
+    margin-left: 2.5em;
+}
+
+.list li:last-child {
+    border: none;
+}
+
+.list li span:before {
+    content: "";
+    position: absolute;
+    left: 1em;
+    top: 0.7em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    background: #fb895e url(../img/contacts-avatar.png) no-repeat center;
+    background-size: 0.6em 0.6em;
+    margin-bottom: 1px;
+}
+
+.list li:nth-child(2) span:before {
+    background-color: #9d60e5;
+}
+
+.list li:nth-child(3) span:before {
+    background-color: #329be4;
+}
+
+.list li:nth-child(4) span:before {
+    background-color: #ff695f;
+}
+
+.list li:nth-child(5) span:before {
+    background-color: #eacc57;
+}
+
+.list li:hover {
+    background-color: #f0f8fc;
+}
+
+.converstations-list {
+    display: none;
+}
